@@ -82,7 +82,7 @@ namespace Decisions
 
 
             // 方法3（若要使用请删除下面的注释符号）----------------------------------------------------------------
-            /*
+            
             string message = " "; // 在外部定义变量“message”为strain类型，但是值为一个空格；随后开始判定
             if (userValue == "1")
                 message = "You won a new car!";
@@ -93,15 +93,13 @@ namespace Decisions
             else
             {
                 message = "Sorry we didn't understand. ";
-                //message = message + "You Lose."; // 将上面已赋值为“Sorry we didn't understand. "的
-                变量“message”和“You lose."连接
-                message += "You lose."; // 复制和连接运算符：“+=”，作用是先将变量“message”里的信息提取，再把它
-                和字符串“You lose。”连接，最后一起显示
+                //message = message + "You Lose."; // 将上面已赋值为“Sorry we didn't understand. "的变量“message”和“You lose."连接
+                message += "You lose."; // 复制和连接运算符：“+=”，作用是先将变量“message”里的信息提取，再把它和字符串“You lose。”连接，最后一起显示
             }
 
-            Console.WriteLine(message);1
+            Console.WriteLine(message);
             Console.ReadLine();
-            */
+            
             // 这种方法练习了+=运算符；若删除90和94行的花括号，则无论输入的值，都会在结果的最后加上“You lose.”
 
 
@@ -128,11 +126,12 @@ namespace Decisions
             //这种方法与方法4相比，大大减少了代码量
 
             // 方法6（若要使用请删除下面的注释符号）----------------------------------------------------------------
-
+            /*
             string message = (userValue == "1") ? "boat" : "strand of lint";
 
             Console.WriteLine("You enterde: {0}, therefore you won a {1}!", userValue, message); // 这一步也是替换，想显示用户输入和获得的奖品，因此用{0}和{1}按顺序代替后面的短语
             Console.ReadLine();
+            */
         }
     }
 }
